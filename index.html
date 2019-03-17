@@ -1,0 +1,19 @@
+<!doctype html>
+<head>
+  <style>
+  p {
+    font-size:600px;
+    text-transform:uppercase;
+    margin:0 auto;
+  }
+  </style>
+</head>
+<script type='text/jst' id="template-audio">
+<audio id="<%- d.id %>" preload="auto">
+  <source src="<%- d.oggSrc %>" type="audio/ogg">
+  Your browser does not support the audio tag.
+</audio>
+</script>
+<p id=letter></p>
+<script src="js/lib/lodash.min.js"></script>
+<script src="js/alfabet-application.js"></script>
